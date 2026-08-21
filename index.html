@@ -8,10 +8,26 @@
     <meta name="author" content="Arena Affiliates" />
     <link rel="icon" href="img/favicon.ico" />
 
-    <!-- ==========================================================
-         PIXELS / TRACKING — desativados neste clone.
-         Cole aqui os seus (GA4, Meta Pixel, Trackgram) ao subir.
-         ========================================================== -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3LCDCQZPC3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3LCDCQZPC3');
+    </script>
+
+    <link rel="preconnect" href="https://connect.facebook.net" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://api.trackgram.com.br" />
+
+    <!-- Trackgram — canal 177 / bot 236 / @cabreloafree_bot -->
+    <script
+      src="https://api.trackgram.com.br/tracker.js"
+      data-trackgram-channel="177"
+      data-trackgram-bot="236"
+      data-trackgram-bot-username="cabreloafree_bot"
+    ></script>
 
     <link rel="preload" as="image" href="img/cabreloa-hero-mobile-v3.webp" fetchpriority="high" media="(max-width: 767px)" />
     <link rel="preload" as="image" href="img/cabreloa-hero-desktop-v3.webp" fetchpriority="high" media="(min-width: 768px)" />
@@ -36,6 +52,7 @@
   </head>
 
   <body>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1344726187578487&ev=PageView&noscript=1" alt="" /></noscript>
     <div id="root">
       <div class="min-h-screen bg-background pt-10">
 
@@ -195,5 +212,21 @@
 
     <script src="config.js"></script>
     <script src="assets/app.js"></script>
+
+    <!-- Meta Pixel — carregado depois do first paint pra nao travar o LCP -->
+    <script>
+      window.addEventListener('load', function () {
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1344726187578487');
+        fbq('track', 'PageView');
+      });
+    </script>
   </body>
 </html>

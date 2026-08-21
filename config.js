@@ -2,8 +2,11 @@
    CONFIG DA LP — troque só aqui pra usar com outro afiliado
    ============================================================ */
 window.LP_CONFIG = {
-  // Link de destino de TODOS os botões (Telegram, WhatsApp, casa, etc.)
-  ctaUrl: "https://t.me/SEU_CANAL_AQUI",
+  // Link de destino de TODOS os botões.
+  // Isto é o FALLBACK: o tracker.js do Trackgram sobrescreve o href
+  // com o link rastreado do bot @cabreloafree_bot. Só vale se o
+  // Trackgram não carregar (adblock, offline, erro de rede).
+  ctaUrl: "https://t.me/cabreloafree_bot",
 
   // Barra fixa do topo
   vagas: 6,

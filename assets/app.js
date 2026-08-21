@@ -7,9 +7,17 @@
 (function () {
   var C = window.LP_CONFIG || {};
 
-  /* ---------- 1. Link dos CTAs ---------- */
+  /* ---------- 1. Link dos CTAs ----------
+     ATENCAO a ordem: o tracker.js do Trackgram reescreve o href destes
+     botoes pra incluir os parametros de rastreio (e marca o link com
+     data-trackgram-injected). Este script roda antes do DOMContentLoaded,
+     ou seja, ANTES do Trackgram — o ctaUrl aqui e so o FALLBACK, e o
+     Trackgram sobrescreve por cima. E o mesmo comportamento do original.
+     A guarda abaixo garante que a gente nunca apague um link ja injetado,
+     mesmo que a ordem mude. */
   if (C.ctaUrl) {
     document.querySelectorAll('a[data-cta]').forEach(function (a) {
+      if (a.hasAttribute('data-trackgram-injected')) return;
       a.href = C.ctaUrl;
     });
   }
