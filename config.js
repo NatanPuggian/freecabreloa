@@ -2,11 +2,17 @@
    CONFIG DA LP — troque só aqui pra usar com outro afiliado
    ============================================================ */
 window.LP_CONFIG = {
-  // Link de destino de TODOS os botões.
-  // Isto é o FALLBACK: o tracker.js do Trackgram sobrescreve o href
-  // com o link rastreado do bot @cabreloafree_bot. Só vale se o
-  // Trackgram não carregar (adblock, offline, erro de rede).
-  ctaUrl: "https://t.me/cabreloafree_bot",
+  // Link de destino de TODOS os botões: convite do grupo no Telegram.
+  //
+  // ATENCAO: hoje isto é só o FALLBACK. O tracker.js do Trackgram
+  // sobrescreve o href em runtime com o deep-link do bot
+  // (telegram.me/cabreloafree_bot?start=tg_XXXX). Ou seja, na prática
+  // o clique vai pro BOT, não pra este convite — este link só entra em
+  // ação se o Trackgram não carregar (adblock, offline, erro de rede).
+  //
+  // Se a intenção é o botão levar direto pro grupo, o Trackgram precisa
+  // parar de reescrever os CTAs (ver nota no README).
+  ctaUrl: "https://telegram.me/+m75Z-mJHz7RjYTJh",
 
   // Barra fixa do topo
   vagas: 6,
