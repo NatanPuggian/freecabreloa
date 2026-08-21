@@ -1,0 +1,6 @@
+# Bundle React original — mantido no repo so como referencia,
+# nao e carregado pela pagina e nao precisa ir pro deploy.
+assets/index.js
+
+README.md
+.claude/

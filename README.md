@@ -57,8 +57,37 @@ Comparado o clone com o original no navegador:
   `RIO DE JANEIRO` (geo-IP) contra `tua região` (fixo)
 - nenhuma imagem quebrada, nenhum erro de console
 
-## Pendências
+## Deploy na Vercel
 
-- Colar os pixels de tracking próprios antes de subir
-- Se for reaproveitar as imagens, elas têm a cara do Cabreloa — trocar se a LP
-  for pra outro afiliado
+O projeto já está configurado. Ao criar o projeto na Vercel:
+
+1. **Import Git Repository** → `natanferreira-commits/freecabreloa`
+2. **Framework Preset:** `Other` (a Vercel detecta sozinha pelo `vercel.json`)
+3. **Build Command:** deixar **vazio**
+4. **Output Directory:** `.` (raiz)
+5. Deploy
+
+Não há variáveis de ambiente pra configurar.
+
+### Por que não existe `package.json` aqui
+
+De propósito. Se um `package.json` aparecer na raiz, a Vercel tenta rodar um
+build e o deploy quebra — o site é estático puro. Não adicione um.
+
+### O que o `vercel.json` faz
+
+- `index.html` e `config.js` sem cache (pra editar e ver na hora)
+- `assets/` com cache de 1h + stale-while-revalidate
+- `img/` com cache de 1 dia + stale-while-revalidate
+- `cleanUrls` ligado
+
+O `assets/index.js` (bundle React original) está no `.vercelignore` — fica no
+repo como referência, mas não vai pro deploy.
+
+## Antes de colocar tráfego
+
+- [ ] Trocar `ctaUrl` no `config.js` (hoje é `t.me/SEU_CANAL_AQUI`)
+- [ ] Colar os pixels próprios (GA4, Meta Pixel, Trackgram) no `<head>` do `index.html`
+- [ ] Se a LP for pra outro afiliado: trocar as imagens em `img/`, os textos e
+      o `<title>`/meta tags — as fotos são a cara do Cabreloa
+- [ ] Conferir o domínio na Vercel
