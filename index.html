@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grupo do Mago | Grátis no Telegram</title>
+    <meta name="description" content="Entre no grupo gratuito do Mago (Cabreloa). Análise de jogo todo dia, resenha de verdade e leitura direto no seu Telegram." />
+    <meta name="author" content="Arena Affiliates" />
+    <link rel="icon" href="img/favicon.ico" />
+
+    <!-- ==========================================================
+         PIXELS / TRACKING — desativados neste clone.
+         Cole aqui os seus (GA4, Meta Pixel, Trackgram) ao subir.
+         ========================================================== -->
+
+    <link rel="preload" as="image" href="img/cabreloa-hero-mobile-v3.webp" fetchpriority="high" media="(max-width: 767px)" />
+    <link rel="preload" as="image" href="img/cabreloa-hero-desktop-v3.webp" fetchpriority="high" media="(min-width: 768px)" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700;900&display=swap" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Grupo do Mago | Grátis no Telegram" />
+    <meta property="og:description" content="Entre no grupo gratuito do Mago (Cabreloa). Análise de jogo todo dia, resenha de verdade e leitura direto no seu Telegram." />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="assets/index.css" />
+    <style>
+      /* Reveal on scroll — reproduz o fade-up que o React fazia */
+      .reveal    { opacity: 0; transform: translateY(30px); transition: opacity .7s ease, transform .7s ease; }
+      .reveal-md { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+      .reveal-sm { opacity: 0; transform: translateY(16px); transition: opacity .5s ease, transform .5s ease; }
+      .is-visible { opacity: 1 !important; transform: translateY(0) !important; }
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="min-h-screen bg-background pt-10">
+
+        <!-- ===== BARRA FIXA DO TOPO ===== -->
+        <div id="top-banner" class="fixed top-0 w-full z-50 py-2 text-center text-sm font-semibold tracking-wide uppercase text-black" style="background-color: rgb(0, 200, 83);">👑 <span id="vagas">6</span> vagas restantes para <span id="regiao">tua região</span></div>
+
+        <!-- ===== HERO ===== -->
+        <section class="relative min-h-[92vh] md:min-h-[85vh] flex items-end overflow-hidden">
+          <img src="img/cabreloa-hero-mobile-v3.webp" alt="" aria-hidden="true" fetchpriority="high" loading="eager" decoding="async" class="absolute inset-0 w-full h-full object-cover object-center md:hidden" />
+          <img src="img/cabreloa-hero-desktop-v3.webp" alt="" aria-hidden="true" fetchpriority="high" loading="eager" decoding="async" class="absolute inset-0 w-full h-full object-cover hidden md:block" style="object-position: 30% center;" />
+          <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/10"></div>
+
+          <div class="relative z-10 container pb-10 pt-40 md:pb-24 md:pt-16">
+            <div class="max-w-2xl reveal">
+              <div class="inline-flex items-center gap-2 mb-5 px-3 py-1.5 rounded-full border border-primary/60 bg-primary/10 backdrop-blur-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-crown w-3.5 h-3.5 text-primary"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path><path d="M5 21h14"></path></svg>
+                <span class="text-[11px] md:text-xs font-body font-bold uppercase tracking-[0.18em] text-foreground">Grupo do Mago · Gratuito</span>
+              </div>
+
+              <h1 class="font-display leading-[0.95] tracking-wide mb-5 [text-shadow:0_2px_8px_hsl(0_0%_0%/0.6),0_4px_30px_hsl(0_0%_0%/0.5)]">
+                <span class="block uppercase font-black text-5xl md:text-7xl text-[#00E676] [text-shadow:0_2px_6px_hsl(0_0%_0%/0.55),0_4px_24px_hsl(0_0%_0%/0.4)]">O grupo do<br />Mago tá aberto.</span>
+                <span class="block font-body normal-case font-bold text-lg md:text-2xl text-foreground mt-4 [text-shadow:0_1px_4px_hsl(0_0%_0%/0.5)]">E é <span class="text-[#00E676] font-extrabold">de graça</span>.</span>
+              </h1>
+
+              <p class="text-foreground/90 text-base md:text-xl mb-8 font-body leading-relaxed max-w-xl">Análise de jogo todo dia, resenha de verdade e a leitura do Mago direto no seu Telegram. De graça, sem pegadinha. É só entrar.</p>
+
+              <a data-cta href="#" target="_blank" rel="noopener noreferrer" class="inline-block whitespace-nowrap bg-[#00C853] text-black hover:bg-[#00E676] transition-colors duration-200 font-body font-bold text-base md:text-xl px-8 md:px-10 py-4 md:py-4 rounded-xl cursor-pointer text-center uppercase tracking-wider">QUERO ENTRAR</a>
+              <p class="text-muted-foreground text-sm mt-3 font-body">+18 • Aposte com responsabilidade</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== BENEFÍCIOS ===== -->
+        <section class="py-12 md:py-16 bg-card/40 relative">
+          <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent"></div>
+          <div class="container">
+            <h2 class="font-display text-3xl md:text-5xl tracking-wide text-center mb-8 reveal-md">O QUE EU TE ENTREGO <span class="text-gradient-green">NO GRUPO</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-3xl mx-auto">
+
+              <div class="bg-gradient-card border border-border rounded-xl p-4 flex items-start gap-3 hover:border-primary/60 transition-colors reveal-sm">
+                <div class="w-10 h-10 rounded-lg bg-primary/15 border border-primary/30 flex items-center justify-center shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-check w-5 h-5 text-primary"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="m9 16 2 2 4-4"></path></svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="font-display text-lg md:text-xl tracking-wide mb-1 leading-tight">ANÁLISE TODO SANTO DIA</h3>
+                  <p class="text-muted-foreground text-sm leading-snug font-body">Eu boto a mão na massa: leitura dos jogos, dos mercados e das odds antes da bola rolar. Tu não entra no escuro.</p>
+                </div>
+              </div>
+
+              <div class="bg-gradient-card border border-border rounded-xl p-4 flex items-start gap-3 hover:border-primary/60 transition-colors reveal-sm">
+                <div class="w-10 h-10 rounded-lg bg-primary/15 border border-primary/30 flex items-center justify-center shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-5 h-5 text-primary"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="font-display text-lg md:text-xl tracking-wide mb-1 leading-tight">A RESENHA QUE RENDE</h3>
+                  <p class="text-muted-foreground text-sm leading-snug font-body">Mais de 60 mil cabeças trocando ideia ao vivo comigo. Aqui aposta não é solidão, é comunidade.</p>
+                </div>
+              </div>
+
+              <div class="bg-gradient-card border border-border rounded-xl p-4 flex items-start gap-3 hover:border-primary/60 transition-colors reveal-sm">
+                <div class="w-10 h-10 rounded-lg bg-primary/15 border border-primary/30 flex items-center justify-center shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radio w-5 h-5 text-primary"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"></path><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"></path><circle cx="12" cy="12" r="2"></circle><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"></path><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"></path></svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="font-display text-lg md:text-xl tracking-wide mb-1 leading-tight">O MAGO AO VIVO</h3>
+                  <p class="text-muted-foreground text-sm leading-snug font-body">Acompanho os jogos junto com tu, com leitura ao vivo e reação em tempo real.</p>
+                </div>
+              </div>
+
+              <div class="bg-gradient-card border border-border rounded-xl p-4 flex items-start gap-3 hover:border-primary/60 transition-colors reveal-sm">
+                <div class="w-10 h-10 rounded-lg bg-primary/15 border border-primary/30 flex items-center justify-center shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy w-5 h-5 text-primary"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+                </div>
+                <div class="min-w-0">
+                  <h3 class="font-display text-lg md:text-xl tracking-wide mb-1 leading-tight">QUEM APOSTA DESDE 2018</h3>
+                  <p class="text-muted-foreground text-sm leading-snug font-body">Não sou tipster de ontem. É estrada, histórico e cara pra mostrar, sem me esconder atrás de print.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== SOBRE ===== -->
+        <section class="relative overflow-hidden bg-background bg-no-repeat bg-top" style="background-image: url(img/cabreloa-about.webp); background-size: contain;">
+          <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background"></div>
+          <div class="container relative">
+            <div class="h-[60vh] sm:h-[70vh] md:h-[80vh] w-full" aria-hidden="true"></div>
+            <div class="relative max-w-3xl mx-auto pb-20 md:pb-28 text-left -mt-[160px] reveal-md">
+              <h2 class="font-display text-4xl md:text-5xl tracking-wide mb-8">EU SOU O CARA QUE TRANSFORMOU APOSTA EM <span class="text-gradient-green">MAGIA</span>.</h2>
+              <div class="space-y-4 text-muted-foreground text-base md:text-lg font-body leading-relaxed">
+                <p>Me chamam de Cabreloa, o Mago. Eu não cheguei ontem não, mano. Desde 2018 eu vivo disso: estudo jogo, leio o mercado e divido tudo com a galera, no olho, sem firula de guru.</p>
+                <p>Minha ideia sempre foi simples: <span class="text-foreground font-semibold">aposta boa não é chute, é leitura</span>. E leitura fica melhor em grupo, na resenha, com gente que entende e troca ideia de verdade.</p>
+                <p>Foi assim que eu juntei uma das maiores comunidades de aposta esportiva do Brasil, entre Telegram e redes.</p>
+                <p class="text-foreground font-semibold">Aqui eu não te prometo ficar rico. Eu te entrego análise honesta, comunidade ativa e a minha cara todo santo dia. O resto é magia. 🎩</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== CTA FINAL ===== -->
+        <section id="final-cta" class="py-20 relative">
+          <div class="container relative">
+            <div class="text-center max-w-xl mx-auto reveal-md">
+              <h2 class="font-display text-4xl md:text-5xl tracking-wide mb-4">⚠️ ÚLTIMAS VAGAS <span class="text-gradient-purple">DESSA SEMANA</span></h2>
+              <p class="text-muted-foreground text-base md:text-lg mb-8 font-body">Pra manter o nível, eu controlo a entrada. Quem perder a chamada dessa semana, espera a próxima.</p>
+              <div class="bg-primary/10 border border-primary/40 rounded-lg py-3 px-6 inline-flex items-center gap-4 mb-8">
+                <span class="text-muted-foreground text-sm font-body uppercase tracking-wider">Vaga reservada por</span>
+                <div class="flex items-center gap-1 font-display text-3xl md:text-4xl text-primary text-glow-purple tracking-wider">
+                  <span id="cd-min">01</span><span class="animate-pulse">:</span><span id="cd-sec">00</span>
+                </div>
+              </div>
+              <div id="final-cta-button">
+                <a data-cta href="#" target="_blank" rel="noopener noreferrer" class="inline-block whitespace-nowrap bg-[#00C853] text-black hover:bg-[#00E676] transition-colors duration-200 font-body font-bold text-base md:text-xl px-8 md:px-10 py-4 md:py-4 rounded-xl cursor-pointer text-center uppercase tracking-wider text-xl px-10 py-5">TÔ DENTRO →</a>
+                <p class="text-muted-foreground text-sm mt-3 font-body">⏱️ Vaga reservada. Clica antes que feche.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== RODAPÉ ===== -->
+        <footer class="py-10 bg-background border-t border-border">
+          <div class="container max-w-3xl mx-auto">
+            <div class="rounded-xl border border-border p-6">
+              <div class="flex items-center gap-2 mb-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert w-5 h-5 text-primary"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>
+                <span class="font-display text-base tracking-widest">JOGO É COISA SÉRIA.</span>
+              </div>
+              <ul class="space-y-3 text-muted-foreground text-sm font-body leading-relaxed">
+                <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-muted-foreground shrink-0"></span>Apostas esportivas envolvem riscos. Nunca aposte o dinheiro do pão, apenas o da manteiga.</li>
+                <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-muted-foreground shrink-0"></span>Resultados passados não garantem lucros futuros, mas estratégia aumenta sua probabilidade.</li>
+                <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-muted-foreground shrink-0"></span>Este site é destinado apenas para maiores de 18 anos.</li>
+                <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-muted-foreground shrink-0"></span>Jogue com responsabilidade.</li>
+              </ul>
+            </div>
+            <p class="text-muted-foreground text-sm font-body mt-6">© 2026 Arena Affiliates. Todos os direitos reservados.</p>
+          </div>
+        </footer>
+
+        <!-- ===== TOAST DE PROVA SOCIAL ===== -->
+        <div id="social-toast" class="fixed top-14 left-4 z-50 transition-all duration-500 opacity-0 -translate-y-4 pointer-events-none">
+          <div class="bg-card/95 backdrop-blur-sm border border-primary/40 rounded-md px-2.5 py-1.5 shadow-lg flex items-center gap-1.5 text-xs text-card-foreground">
+            <span class="text-primary text-[10px] leading-none">●</span>
+            <span><strong id="toast-nome">Thiago</strong> <span id="toast-texto">acabou de entrar no grupo</span></span>
+          </div>
+        </div>
+
+        <!-- ===== CTA FIXO NO RODAPÉ ===== -->
+        <div id="sticky-cta" class="fixed bottom-0 left-0 w-full z-40 transition-all duration-500 opacity-0 translate-y-full pointer-events-none">
+          <div class="bg-background/90 backdrop-blur-sm border-t border-border px-4 py-3 flex justify-center">
+            <a data-cta href="#" target="_blank" rel="noopener noreferrer" class="inline-block whitespace-nowrap bg-[#00C853] text-black hover:bg-[#00E676] transition-colors duration-200 font-body font-bold text-base md:text-xl px-8 md:px-10 py-4 md:py-4 rounded-xl cursor-pointer text-center uppercase tracking-wider w-full max-w-md text-base py-3">ENTRAR NO GRUPO GRÁTIS</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
